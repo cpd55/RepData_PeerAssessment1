@@ -65,7 +65,7 @@ median(sum_steps$number.of.steps, na.rm = TRUE)
 ```
 ## [1] 10765
 ```
-
+ 
 ## What is the average daily activity pattern?
 
 1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
