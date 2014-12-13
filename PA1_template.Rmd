@@ -30,11 +30,16 @@ hist(sum_steps$number.of.steps,main = "Histogram of total number of steps taken"
 
 2. Reporting the mean and median total number of steps taken per day
 
-```{r, results='asis'}
-#install.packages('xtable')
-library(xtable)
-xt <- xtable(sum_steps)
-print(xt, type="html")
+a. Mean:
+
+```{r}
+mean(sum_steps$number.of.steps, na.rm = TRUE)
+```
+
+b. Median:
+
+```{r}
+median(sum_steps$number.of.steps, na.rm = TRUE)
 ```
 
 ## What is the average daily activity pattern?
@@ -83,9 +88,13 @@ hist(sum_steps$number.of.steps,main = "Histogram of total number of steps taken"
 
 Reporting the mean and median total number of steps taken per day on the imputed data
 
-```{r, results='asis'}
-xt <- xtable(sum_steps)
-print(xt, type="html")
+a. Mean:
+```{r}
+mean(sum_steps$number.of.steps, na.rm = TRUE)
+```
+b. Median:
+```{r}
+median(sum_steps$number.of.steps, na.rm = TRUE)
 ```
 
 
